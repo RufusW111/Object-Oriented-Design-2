@@ -5,18 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Object_Oriented_Design
+namespace Object_Oriented_Design.Objects
 {
     public class Customer
     {
+
         //Properties
-        public string UserName {  get; set; }
+        public string UserName { get; set; }
         public string Password { get; private set; }
-        public string Email {  get; set; }
+        public string Email { get; set; }
         public int ID { get; set; }
 
         //Constructor
-        public Customer (string username, string password, string email)
+        public Customer(string username, string password, string email)
         {
             UserName = username;
             Password = password;
@@ -30,7 +31,15 @@ namespace Object_Oriented_Design
             Email = newEmail;
         }
 
-        
+        public string Return_Detail()
+        {
+            string details = $"The username is {UserName}, the email is {Email} and the UserID is {ID}";
+            Console.WriteLine(details);
+            return details;
+        }
+
+
+
 
     }
 }
