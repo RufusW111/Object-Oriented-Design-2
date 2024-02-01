@@ -16,6 +16,8 @@ namespace Object_Oriented_Design.Objects
         public string Email { get; set; }
         public int ID { get; set; }
 
+        private List<Booking> _bookings = new();
+
         //Constructor
         public Customer(string username, string password, string email)
         {
@@ -37,6 +39,22 @@ namespace Object_Oriented_Design.Objects
             Console.WriteLine(details);
             return details;
         }
+
+        public List<Booking> Add_Booking( string Airport, int Price, string Title)
+        {
+            Booking booking = new(Airport, Price, Title );
+            _bookings.Add( booking );
+            return _bookings;
+        }
+
+        public void Check_Bookings()
+        {
+            foreach (Booking booking in _bookings)
+            {
+                Console.Write( booking + "," );
+            }
+        }
+
 
 
 

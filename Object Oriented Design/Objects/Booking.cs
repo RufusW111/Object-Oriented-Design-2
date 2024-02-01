@@ -11,14 +11,17 @@ namespace Object_Oriented_Design.Objects
         //Properties
         public string Airport {  get; set; }
         public int Price { get; set; }
+        public string Title { get; set; }
+
+        public string UserName {  get;  set; }
 
 
         //Constructor
-        public Booking (string airport, int price)
+        public Booking (string airport, int price, string title)
         {
             Airport = airport;
             Price = price;
-
+            Title = title;
         }
     }
 }

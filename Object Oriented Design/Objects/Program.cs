@@ -12,7 +12,7 @@ internal class Program
 {
     static void Main()
     {
-        Customer James = new Customer("James", "1234", "James@gmail.com");
+        Customer James = new ("James", "1234", "James@gmail.com");
         James.Email_Change("Ahaaniscool");
         James.Return_Detail();
     }
