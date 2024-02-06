@@ -11,7 +11,7 @@ namespace Object_Oriented_Design.Objects
         //Properties
         public string Airport {  get; set; }
         public int Price { get; set; }
-        public string Title { get; set; }
+        public string Name { get; set; }
 
         public string UserName {  get;  set; }
 
@@ -21,7 +21,7 @@ namespace Object_Oriented_Design.Objects
         {
             Airport = airport;
             Price = price;
-            Title = title;
+            Name = title;
         }
     }
 }
